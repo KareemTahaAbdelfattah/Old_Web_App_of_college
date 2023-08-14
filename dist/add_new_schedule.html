@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+        integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" type="text/css" href="slide navbar style.css">
+    <link rel="icon" href="pictures\WhatsApp Image 2023-07-28 at 11.26.08 PM.jpeg">
+<style>
+#plus,.labs
+{
+    width: 100px;
+}
+.radio2{
+    font-size: 14px;
+   position: relative;
+   top: 25px;
+   left: 0px;
+   margin-top: 10px;
+   color: /* #6d44b8*/  #205295;
+}
+.radio3{
+    font-size: 14px;
+   position: relative;
+   top: -30px;
+   left: 0px;
+   margin-top: -10px;
+   color: /* #6d44b8*/  #205295;
+}
+.radio4{
+    font-size: 14px;
+   position: relative;
+   top: -78px;
+   left: 0px;
+   margin-top: -10px;
+   color: /* #6d44b8*/  #205295;
+}
+.radio5{
+    font-size: 14px;
+   position: relative;
+   top: -130px;
+   left: 0px;
+   margin-top: -10px;
+   color: /* #6d44b8*/  #205295;
+}
+.radio6{
+    font-size: 14px;
+   position: relative;
+   top: -170px;
+   left: 0px;
+   margin-top: -10px;
+   color: /* #6d44b8*/  #205295;
+}
+.l10 ,Font{
+    font-size: 14px;
+   position: relative;
+   top: -10px;
+   left: 40px;
+   margin-top: -5px;
+   color:/* #6d44b8*/  #205295;
+	
+}
+.l11{
+    font-size: 14px;
+   position: relative;
+   top: -60px;
+   left: 40px;
+   margin-top: -10px;
+   color: /* #6d44b8*/  #205295;
+	
+}
+.l12{
+    font-size: 14px;
+   position: relative;
+   top: -110px;
+   left: 40px;
+   margin-top: -10px;
+   color: /* #6d44b8*/  #205295;
+	
+}
+.l13{
+    font-size: 14px;
+   position: relative;
+   top: -160px;
+   left: 40px;
+   margin-top: -10px;
+   color: /* #6d44b8*/  #205295;
+	
+} 
+.l14{
+    font-size: 14px;
+   position: relative;
+   top: -200px;
+   left: 40px;
+   margin-top: -10px;
+   color: /* #6d44b8*/  #205295;
+	
+}
+
+.btn1{
+    position: relative;
+    top:-220px;
+    width:180px ;
+}
+
+.output1{
+    position: relative;
+    top:-230px;
+    
+}
+
+
+table{
+  table-layout: fixed;
+  width: 80%;
+  margin-left: 110px ;
+  font-size: 18px;
+
+}
+
+
+
+
+tr{
+    height: 1.85em;
+}
+td, th{
+    text-align: center;
+    background: #FAFAFA;
+    
+}
+th{
+    font-weight: 400;
+}
+     </style>
+      <script>
+        function getValue(){
+        var data = document.getElementsByName("gender");
+        var i;
+        for(i=0; i<=data.length; i++){
+            if(data[i].checked){
+                document.getElementById("output").innerHTML=data[i].value;
+        }
+        }
+        }
+        </script>
+       
+</head>
+
+<body>
+
+    <div class="radio1" style="width: 300px;
+    background-color: #FAFAFA; height: 400px;">
+       
+    
+        <label class="Font" style="color:  #205295;  font-size: 18px; margin: 10px;">Select year</label>
+        <input  class="radio2" type="radio" name="gender" value=" arabic 
+        math "/><label class="l10">year_1</label>
+       
+        <input class="radio3" type="radio" name="gender" value=" arabic 2
+        math "/><label class="l11">year_1</label>
+        <input type="radio"class="radio4" name="gender" value=" arabic 3
+        math "/><label class="l12">year_1</label>
+        <input  class="radio5" type="radio" name="gender" value=" arabic 4
+        math "/><label class="l13">year_1</label>
+        <input class="radio6" type="radio" name="gender" value=" arabic 
+        math 5"/><label class="l14">year_1</label>
+        <button onclick="getValue()" class="btn1">shown material </button>
+        
+        <p class="output1" id="output">
+           
+        </p>
+      
+    </div>
+    <div class="container my-2">
+        <button class="btn text-success my-2 table-add " id="plus" style="width: 400px;">
+           generate study_schedule
+        </button>
+        
+        <table class="table table-striped" id="table" >
+            <thead>
+                <tr>
+                    <th scope="col">Time</th>
+                    <th scope="col">Saturday</th>
+                    <th scope="col">Sunday</th>
+                    <th scope="col">Monday</th>
+                    <th scope="col">Tuesday</th>
+                    <th scope="col">Wednesday</th>
+                    <th scope="col">Thursday</th>
+                   
+                    
+                    
+                    
+                </tr>
+            </thead>
+            <tbody >
+                <tr>
+                    <th contenteditable="true" scope="row"></th>
+                    <td contenteditable="true" style="background-color: #20958b;"></td>
+                    <td contenteditable="true" style="background-color: #209564;" ></td>
+                    <td contenteditable="true" style="background-color: #20958b;"></td>
+                    <td contenteditable="true" style="background-color: #209564;"></td>
+                    <td contenteditable="true" style="background-color: #20958b;"></td>
+                    <td contenteditable="true" style="background-color: #209564;">
+                        
+                    </td>
+                    
+                </tr>
+                <tr>
+                    <th contenteditable="true" scope="row"></th>
+                    <td contenteditable="true" style="background-color: #209564;"></td>
+                    <td contenteditable="true" style="background-color: #20958b;" ></td>
+                    <td contenteditable="true"  style="background-color: #209564;"></td>
+                    <td contenteditable="true" style="background-color: #20958b;"></td>
+                    <td contenteditable="true"  style="background-color: #209564;"></td>
+                    <td contenteditable="true" style="background-color: #20958b;">
+                        
+                    </td>
+                   
+                </tr>
+                <tr>
+                    <th contenteditable="true" scope="row"></th>
+                    <td contenteditable="true" style="background-color: #20958b;"></td>
+                    <td contenteditable="true" style="background-color: #209564;" ></td>
+                    <td contenteditable="true" style="background-color: #20958b;"></td>
+                    <td contenteditable="true" style="background-color: #209564;"></td>
+                    <td contenteditable="true" style="background-color: #20958b;"></td>
+                    <td contenteditable="true" style="background-color: #209564;">
+                        
+                    </td>
+                </tr>
+                <tr>
+                    <th contenteditable="true" scope="row"></th>
+                    <td contenteditable="true" style="background-color: #209564;"></td>
+                    <td contenteditable="true" style="background-color: #20958b;" ></td>
+                    <td contenteditable="true"  style="background-color: #209564;"></td>
+                    <td contenteditable="true" style="background-color: #20958b;"></td>
+                    <td contenteditable="true"  style="background-color: #209564;"></td>
+                    <td contenteditable="true" style="background-color: #20958b;">
+                        
+                    </td>
+                   
+                   
+                </tr>
+                <tr>
+                    <th contenteditable="true" scope="row"></th>
+                    <td contenteditable="true" style="background-color: #20958b;"></td>
+                    <td contenteditable="true" style="background-color: #209564;" ></td>
+                    <td contenteditable="true" style="background-color: #20958b;"></td>
+                    <td contenteditable="true" style="background-color: #209564;"></td>
+                    <td contenteditable="true" style="background-color: #20958b;"></td>
+                    <td contenteditable="true" style="background-color: #209564;">
+                        
+                    </td>
+                </tr>
+                <tr>
+                    <th contenteditable="true" scope="row"></th>
+                    <td contenteditable="true" style="background-color: #209564;"></td>
+                    <td contenteditable="true" style="background-color: #20958b;" ></td>
+                    <td contenteditable="true"  style="background-color: #209564;"></td>
+                    <td contenteditable="true" style="background-color: #20958b;"></td>
+                    <td contenteditable="true"  style="background-color: #209564;"></td>
+                    <td contenteditable="true" style="background-color: #20958b;">
+                        
+                    </td>
+                </tr>
+                <tr>
+                    <th contenteditable="true" scope="row"></th>
+                    <td contenteditable="true" style="background-color: #20958b;"></td>
+                    <td contenteditable="true" style="background-color: #209564;" ></td>
+                    <td contenteditable="true" style="background-color: #20958b;"></td>
+                    <td contenteditable="true" style="background-color: #209564;"></td>
+                    <td contenteditable="true" style="background-color: #20958b;"></td>
+                    <td contenteditable="true" style="background-color: #209564;">
+                        
+                    </td>
+                </tr>
+                <tr>
+                    <th contenteditable="true" scope="row"></th>
+                    <td contenteditable="true" style="background-color: #209564;"></td>
+                    <td contenteditable="true" style="background-color: #20958b;" ></td>
+                    <td contenteditable="true"  style="background-color: #209564;"></td>
+                    <td contenteditable="true" style="background-color: #20958b;"></td>
+                    <td contenteditable="true"  style="background-color: #209564;"></td>
+                    <td contenteditable="true" style="background-color: #20958b;">
+                        
+                    </td>
+                  
+                </tr>
+                <tr>
+                    <th contenteditable="true" scope="row"></th>
+                    <td contenteditable="true" style="background-color: #20958b;"></td>
+                    <td contenteditable="true" style="background-color: #209564;" ></td>
+                    <td contenteditable="true" style="background-color: #20958b;"></td>
+                    <td contenteditable="true" style="background-color: #209564;"></td>
+                    <td contenteditable="true" style="background-color: #20958b;"></td>
+                    <td contenteditable="true" style="background-color: #209564;">
+                        
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <button class="btn text-success my-2 table-add " style="width: 400px;">
+            save data
+         </button>
+         
+    </div>
+
+    <!-- jquery  -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- bootstrap -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+
+    <!-- custome  -->
+    <script src="table.js"></script>
+</body>
+
+</html>

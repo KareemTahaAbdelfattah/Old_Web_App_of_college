@@ -1,0 +1,28 @@
+body{
+   background:#ECF0F1 ;
+}
+/* .wrapper
+  margin: 50px auto;
+  width: 1000px;
+   */
+table{
+  table-layout: fixed;
+  width: 100%;
+  font-size: 18px;
+}
+caption
+{
+    text-align: center;
+    font-size : 1.5em;
+    padding: 0.35em;
+}
+tr{
+    height: 1.85em;
+}
+td, th{
+    text-align: center;
+    background: #FAFAFA;
+}
+th{
+    font-weight: 400;
+}
